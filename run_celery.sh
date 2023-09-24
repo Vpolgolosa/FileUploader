@@ -4,4 +4,4 @@
 sleep 10
 
 # Replace * with name of Django Project
-su -m myuser -c "celery -A FileUploader worker -l INFO -P solo"
+su -m root -c "celery -A FileUploader worker -l INFO -P solo"
